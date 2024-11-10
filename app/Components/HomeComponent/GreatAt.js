@@ -1,7 +1,7 @@
 import Image from "next/image";
 import growth from "../Images/growth.jpg";
 import innovative from "../Images/Inovative.jpg";
-import Logo from "../Images/Laptop.jpg";
+import Logo from "../Images/laptop.jpg";
 import management from "../Images/management.jpg";
 import strategic from "../Images/Strategic.jpg";
 export default function GreatAt() {
