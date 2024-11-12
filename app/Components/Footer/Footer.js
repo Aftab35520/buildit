@@ -30,7 +30,7 @@ export default function Footer() {
         </div>
       
         </div> */}
-        <div className="Copyright w-full flex justify-center items-center bg-[#E0DFDE] h-20 border-t-2">
+        <div className="Copyright w-full flex justify-center items-center bg-[#E0DFDE] h-20 border-t-2 text-black">
             <p className="t-7-">All Rights Reserved Pureformance 2024</p>
         </div>
     </div>
