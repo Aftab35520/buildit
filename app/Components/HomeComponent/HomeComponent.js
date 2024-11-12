@@ -6,7 +6,7 @@ import Whatwedoanim from "./whatwedoanim";
 const Homeanim=lazy(()=>import("./Homeanimation"))
 export default function HomeComponent() {
   return (
-    <div className="w-full flex flex-col items-center mt-[150px] justify-center ">
+    <div className="w-full flex flex-col items-center mt-[150px] justify-center bg-white">
         <div className="w-[calc(100%-80px)] max-w-[1500px]">
             <p className=" text-6xl font-medium max-w-[1000px] mt-4 text-revel text-revel-first bigtext">Empower Your Brand Design Websites That Captivate</p>
             <p className="mt-5 text-black text-[16px]">From Idea to Impact, Designing High-Quality website for Brands That Stand Out</p>

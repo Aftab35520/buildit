@@ -3,8 +3,8 @@ import Hero from "../Images/hero.webp";
 import Team from "./team";
 export default function About() {
   return (
-    <div>
-      <div className="w-full h-dvh relative overflow-hidden mb-20">
+    <div className="bg-white">
+      <div className="w-full h-dvh relative overflow-hidden mb-20 ">
         <Image src={Hero} className="h-full w-full" />
         <div className=" absolute top-[40%] left-0 w-full h-dvh p-6 ">
           <div className="flex flex-col items-center">
