@@ -7,7 +7,7 @@ const Homeanim=lazy(()=>import("./Homeanimation"))
 export default function HomeComponent() {
   return (
     <div>
-      <div className="w-full mt-[150px] bg-white">
+      <div className="w-full h-[150px] bg-white">
       </div>
       <div className="w-full flex flex-col items-center  justify-center bg-white text-black">
         <div className="w-[calc(100%-80px)] max-w-[1500px]">
