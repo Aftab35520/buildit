@@ -1,0 +1,316 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  
+  }
+
+  .poppins-font{
+    color: red;
+    background-color: black;
+  }
+
+  .handlenav --scrolled{
+    display: none;
+  }
+  
+  .backgroundss{
+    background-color: aqua;
+    backdrop-filter: blur(10px);
+   }
+   
+   .mouse-onAnimation{
+     padding: 30px;
+     position: absolute;
+     bottom: 0;
+     margin-bottom: -89px;
+     pointer-events: none;
+     &.moredeep{
+      margin-bottom: -110px;
+     }
+   }
+   
+   .Image-On :hover{
+     animation-name: toblur;
+     animation-duration: .2s;
+     animation-fill-mode: forwards;
+   }
+   
+   .Image-On :hover ~ .mouse-onAnimation{
+     animation-name: Bot-top;
+     animation-duration: .2s;
+     animation-fill-mode: forwards;
+     
+   }
+   .Image-On:hover{
+    transform: scale(1.01);
+   }
+   
+   @keyframes Bot-top {
+     0%{
+       margin-bottom: -80px;
+     }
+     100%{
+       margin-bottom: 0;
+     }
+   }
+   
+   
+   
+   @keyframes toblur {
+     0%{
+       opacity: 100%;
+     }
+     100%{
+       opacity: 30%;
+     }
+   }
+   
+   .five-image{
+     width: 100%;
+     height: 400px;
+     border-radius: 8px;
+   }
+   .Image-On :hover ~ .five-image{
+     transform: scale(1.1);
+   }
+   
+   .text-revel{
+    overflow: hidden;
+   }
+
+   @keyframes reveal {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  .reveal-text-start {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: reveal 4s ease-out forwards;
+    width: 0;
+    position: relative;
+  }
+
+  .reveal-text {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: reveal 4s ease-out forwards;
+    animation-range-start: cover 10dvh;
+    animation-range-end: cover 40dvh;
+    animation-timeline: view(0);
+    width: 0;
+    position: relative;
+  }
+
+   
+
+   .text-revel-red{
+    animation: redrevel linear forwards;
+    animation-range-start: cover 0dvh;
+    animation-range-end: cover 40dvh;
+    animation-timeline: view(0);
+
+   }
+   @keyframes redrevel {
+    0%{
+      color: #1E1B1B;
+    }
+    70%{
+      color: #1E1B1B;
+      background-color: #1E1B1B;
+    }
+    100%{
+      background-color: #1E1B1B;
+      color:#B64023;
+    }
+   }
+
+   @keyframes revel {
+    0%{
+      background-size: 0% 100%;
+    }
+    50%{
+      background-size: 50% 100%;
+    }
+    100%{
+      background-size: 100% 100%;
+    }
+   }
+   
+   .Arrow-head{
+    font-size: 17px;
+    background-color:#B64023;
+    padding: 6px ;
+    border-radius: 7px;
+    color: black;
+    width: 40px;
+    display: none;
+    position: absolute;
+    margin-left: 10px;
+    height: 35px;
+    text-align: center;
+    pointer-events: none;
+   }
+   .control-arrow :hover{
+    transform: translate(21px);
+    transition:.2s ease-in-out;
+   }
+
+   .control-arrow :hover  .Arrow-head{
+    display: inline;
+   }
+
+   .Aboutpage{
+    width: 100%;
+    padding-top: 100px;
+    background-image: url("./Components/Images/boxbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+
+  @media (min-width: 0) and (max-width:1000px) {
+    .bigtext{
+      font-size: 5vh;
+    }
+    .bigtextlarge{
+      font-size: 8vh;
+    }
+    .smalltext{
+      font-size: 2vh;
+    }
+    .home-flex{
+      grid-template-columns: 1fr;
+    }
+    .anim-left{
+      justify-content: center;
+      
+    }
+    .video-{
+      width: 100%;
+    }
+    .remextra{
+      margin-bottom: 100px;
+    }
+    .mouse-onAnimation{
+      top: 10%;
+      
+    }
+    .Image-On{
+      pointer-events: none;
+      opacity: 90%;
+    }
+
+  }
+
+  @media (min-width: 0) and (max-width:1000px) {
+    .hidecont{
+      display: none;
+    }
+    .Aboutpage{
+      height: auto;
+    }
+    .makecontfll{
+      width: 100%;
+      margin-top: 100px;
+     
+    }
+    .footerlogo{
+      margin-bottom: 50px;
+    }
+ 
+  }
+
+  @media (min-width: 600px) and (max-width:800px) {
+    .headermobile{
+      width: 100%;
+    }
+    .headerlink{
+      grid-template-columns: 1fr 1fr;
+      
+    }
+  }
+
+  @media (min-width: 0) and (max-width:600px) {
+    .headermobile{
+      width: 100%;
+    }
+    .headerlink{
+      grid-template-columns: 1fr;
+      
+    }
+  }
+
+.body{
+  background-color: rgb(185, 60, 60);
+  display: grid;
+  place-items: center;
+  
+}
+
+.slider{
+  width: 99%;
+  height: 25px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  height: 30px;
+ 
+}
+
+.slidertrack{
+  display: flex;
+  width: calc(500px*18);
+  animation: rotateto 5s linear infinite;
+}
+.slide{
+  width: 500px;
+  height: 25px;
+  display: flex;
+  place-items: center;
+  padding: 10px;
+  color: white;
+  
+}
+
+@keyframes rotateto {
+  0%{
+    margin-left: 0;
+  }
+  100%{
+    margin-left: -485px;
+    
+  }
+  
+}
