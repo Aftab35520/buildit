@@ -9,7 +9,7 @@ export default function GreatAt() {
     <div className="w-full  bg-[#1E1B1B] text-white mt-24 flex justify-center">
       <div className="w-[calc(100%-80px)] max-w-[1500px] mt-24">
         <p className=" text-2xl smalltext">What we are great at</p>
-        <p className="text-6xl font-medium max-w-[1000px] mt-4 reveal-text  bigtext" >Navigating the Brand Journey<br/> Creation to Exit</p>
+        <p className="text-6xl font-medium max-w-[1000px] mt-4   bigtext" >Navigating the Brand Journey<br/> Creation to Exit</p>
         <div className="grid grid-cols-2 gap-4 mt-24 home-flex">
            <div className="w-[full] h-[410px] Image-On overflow-hidden  relative">
                <Image src={innovative} className="w-[100%] h-[410px] rounded-lg cursor-pointer  " alt=""/>

@@ -5,7 +5,7 @@ import image3 from "../Images/portfolio.jpg"
 export default function Ourwork() {
   return (
     <div className="w-[calc(100%-80px)] max-w-[1500px] relative">
-        <p className="text-6xl font-medium max-w-[1000px] mt-[150px] bigtext reveal-text">From Vision to Website<br/> Build Your<br/> Online Presence</p>
+        <p className="text-6xl font-medium max-w-[1000px] mt-[150px] bigtext ">From Vision to Website<br/> Build Your<br/> Online Presence</p>
         <p className="font-medium mb-[100px] mt-[40px] sticky top-24 z-10 w-full border-[1px] p-6 rounded-[8px] backdrop-blur-3xl bg-white ">Our Works</p>
  
         <p className="w-full border-b-[1px] border-black mb-16 "></p>

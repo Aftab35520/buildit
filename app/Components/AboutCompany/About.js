@@ -8,7 +8,7 @@ export default function About() {
         <Image src={Hero} className="h-full w-full" />
         <div className=" absolute top-[40%] left-0 w-full h-dvh p-6 ">
           <div className="flex flex-col items-center">
-          <p className="text-6xl text-white font-medium max-w-[1000px] mt-4  text-center bigtext reveal-text-start" >Transforming Vision <br/>Empowering Dreams</p>
+          <p className="text-6xl text-white font-medium max-w-[1000px] mt-4  text-center bigtext " >Transforming Vision <br/>Empowering Dreams</p>
           <p className="text-white text-center">Shaping Inspiring Websites for Tomorrow's Innovators</p>
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function About() {
 
       <div className="flex justify-center bg-[#1E1B1B] text-white mt-60">
         <div className="w-[calc(100%-80px)] max-w-[1500px] ">
-          <p className="text-[50px] font-medium max-w-[1000px] mt-[150px] leading-[55px] mb-[50px]  bigtext reveal-text">Embracing Wholeness for<br/> Effective Solutions Together</p>
+          <p className="text-[50px] font-medium max-w-[1000px] mt-[150px] leading-[55px] mb-[50px]  bigtext ">Embracing Wholeness for<br/> Effective Solutions Together</p>
           <p className="max-w-[600px] mb-36">We believe in examining the entire landscape to create effective solutions. By considering all aspects of your project, we ensure that every element aligns with your goals. This comprehensive vision allows us to deliver results that are not only impactful but also sustainable. Join us in embracing a complete perspective for your success.</p>
         </div>
       </div>
